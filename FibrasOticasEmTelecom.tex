@@ -58,7 +58,7 @@ As fibras ópticas tem diversas finalidades, sendo uma das mais importantes a ut
 
 \section{Introducão}
 \subsection{Elementos do sistema}
-\par Qualquer sistema de comunicação pode ser representado pelo diagrama na figura \ref{fig:diagrama-sistema-comunicacao}, este é composto por distintos elementos que possuem as seguintes funções: 
+\par Qualquer sistema de comunicação pode ser representado pelo diagrama na figura \ref{fig:diagrama-sistema-comunicacao}, este é composto por distintos elementos que possuem as seguintes funções: \cite{FUND_OPT}
 
 \begin{enumerate}
 \item \textbf{Fonte:} Responsável pela geração da informação a ser transmitida
@@ -89,14 +89,14 @@ Comentar sobre alguns componentes óticos utilizados como fbg para filtragem dos
 \section{Modulações utilizadas}
 \subsection{Amplitude Shift Keying (ASK)}
 \par A modulação ASK (Amplitude Shift Keying) é um tipo de modulação por intensidade do sinal da portadora, também conhecida por ON-OFF-keying. O sinal é modulado em uma portadora óptica de alta frequência. Na técnica ASK, um sinal de frequência da portadora é adicionado ao sinal da mensagem. Logo uma mensagem com o bit 1, é transmitido um sinal com A W. Enquanto que no bit 0 com 0 W. A modulação ASK é simples de gerar e detectar. No ponto de detecção, a demodulação pode ser realizada facilmente utilizando um detector fotovoltaico, que converte a energia óptica em elétrica, resultando o sinal transmitido.
-\par	Para um sistema mais avançado de comunicação, é possível atingir mais de um bit transmitido por símbolo. Isto aumenta a capacidade de transmissão e é conhecido como sinalização multinível. De acordo com a equação $M = 2^N$, M representa o nível do sinal e N o número de bits por segundo e é chamado de M-ary signaling.
+\par	Para um sistema mais avançado de comunicação, é possível atingir mais de um bit transmitido por símbolo. Isto aumenta a capacidade de transmissão e é conhecido como sinalização multinível. De acordo com a equação $M = 2^N$, M representa o nível do sinal e N o número de bits por segundo e é chamado de M-ary signaling.\cite{MODULATION}
 \begin{figure}[hb]
 \includegraphics[width=\columnwidth]{ask.png}
 \caption{Exemplo de sinal modulado com ASK}
 \end{figure}
 
 \subsection{Frequency Shift Keying (FSK)}
-\par A modulação FSK é quando a freqüência do laser é trocada entre as duas freqüências. Nesta técnica de modulação. Comparando com a modulação ASK,a complexidade de gerar e receber do sistema aumenta. O formato de modulação diferente baseado no FSK pode ser definido mudando valor do índice de modulação. Uma pequena mudança no índice de modulação resulta em um espectro óptico mais compacto. Em sistemas já implantados, um formato de modulação não pode ser substituído pelo formato de modulação baseado em FSK devido à complexidade do sistema receptor. Nesta técnica, os parâmetros do transmissor e os  parâmetros do receptor devem ser idênticos.
+\par A modulação FSK é quando a freqüência do laser é trocada entre as duas freqüências. Nesta técnica de modulação. Comparando com a modulação ASK,a complexidade de gerar e receber do sistema aumenta. O formato de modulação diferente baseado no FSK pode ser definido mudando valor do índice de modulação. Uma pequena mudança no índice de modulação resulta em um espectro óptico mais compacto. Em sistemas já implantados, um formato de modulação não pode ser substituído pelo formato de modulação baseado em FSK devido à complexidade do sistema receptor. Nesta técnica, os parâmetros do transmissor e os  parâmetros do receptor devem ser idênticos.\cite{MODULATION}
 
 \begin{figure}[hb]
 \includegraphics[width=\columnwidth]{fsk.png}
@@ -116,7 +116,7 @@ Comentar sobre alguns componentes óticos utilizados como fbg para filtragem dos
 \end{figure}
 
 \subsection{Polarization Shift Keying (PolSK)}
-Na modulação PolSK existem dois estados ortogonais de polarização entre o qual o sinal polarizado é mudado para gerar o sinal PolSK. Nesta modulação, o conteúdo do sinal é constante , o que melhora a tolerância não linear e sensibilidade para uma melhor utilização da largura de banda do sistema, a modulação PolSK possui um complexo sistema de geração e detecção de sinais, e também é muito sensível a distúrbios de polarização que podem ocorrer na linha de transmissão.
+Na modulação PolSK existem dois estados ortogonais de polarização entre o qual o sinal polarizado é mudado para gerar o sinal PolSK. Nesta modulação, o conteúdo do sinal é constante , o que melhora a tolerância não linear e sensibilidade para uma melhor utilização da largura de banda do sistema, a modulação PolSK possui um complexo sistema de geração e detecção de sinais, e também é muito sensível a distúrbios de polarização que podem ocorrer na linha de transmissão.\cite{MODULATION}
 \begin{figure}[h]
 \includegraphics[width=\columnwidth]{polsk.png}
 \caption{Exemplo de sinal modulado com PolSK}
