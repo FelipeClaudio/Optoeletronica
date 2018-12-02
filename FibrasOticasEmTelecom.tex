@@ -237,8 +237,44 @@ Busca-se observar os pontos onde existem descontinuidades na reta de potência d
 
 Existem OTDRs com diferentes finalidades. Antes de fazer a compra do mesmo, necessita-se avaliar o resultado que deseja-se obter com o equipamento. Algumas das perguntas que podem ser feitas são: Há necessidade de ser portátil? Precisa ter bateria? Se precisar, esta deseja-se que esta dure por longo período? A tela precisa ser grande? Qual distância máxima da fibra que desejá-se trabalhar? Qual resolução que se espera nos resultados obtidos? Conforme a pesquisa de preço feito no site mercado livre no dia 30/11/2018 \cite{M_LIVRE}, um OTDR novo pode variar entre R\$3.981, e R\$35.000.
 
-\section{Espectrômetro}
+\section{Espectrômetro óptico}
+No processo de instalação e configuração de um sistema de telecomunicações baseado em fibras ópticas pode ser necessário analisar a composição espectral do sinal, dado que o espalhamento das frequências presente no sinal pode significar sobreposição, causando assim erros ao interpretar a informação. Busca-se, na maioria das vezes, utilizar o máximo da fibra em questão de taxa de transmissão, portanto o a frequência que busca=se trabalhar é perto do limiar onde ocorre esta sobreposição.
+ 
+O espectrômetro óptico é um instrumento que tem como finalidade decompor a luz em um espectro de frequência e mostrar este resultado de forma com que se possa realizar análises. Um exemplo de construção é visto na figura \ref{fig:espectrometro_esquematico}
 
+\begin{figure}[H]
+	\includegraphics[width=0.5\textwidth]{images/esquematico_espectrometro.jpeg}
+	\caption{Esquemático da construção de um espectrômetro óptico}
+	\label{fig:espectrometro_esquematico}
+\end{figure} 
+
+O caminho que a luz percorre começa pela fenda. Esta pode ser ter diferentes diâmetros. O diâmetro ideal depende do sistema utilizado. Busca-se um balanço entre a quantidade de luz que passa pela fenda e a resolução obtida, assim como visto em \cite{SPECTROMETES}. Após a luz entrar no equipamento, ela percorre um caminho similar ao mostrado na figura \ref{fig:caminho_luz}, passando por um espelho, depois um rede de difração, um outro espelho e chega finalmente a um detector responsável por transformar o sinal luminoso em um valor de intensidade.
+
+\begin{figure}[H]
+	\includegraphics[width=0.5\textwidth, height=0.35\textwidth]{images/caminho_luz.jpg}
+	\caption{Caminho da luz dentro do espectrômetro}
+	\label{fig:caminho_luz}
+\end{figure}  
+
+A rede de difração é um dos fatores determinantes na resolução do espectrômetro. Existem basicamente 2 tipos de redes de difração, sendo que uma delas é mais simples e barata, tendo ranhuras paralelas em sua construção e traz no resultado muita luz difusa. Em algumas aplicações necessita-se que a distribuição espectral seja a mais uniforme possível. Neste caso, a rede de difração holográfica é vantajosa, pois tem uma resposta melhor neste quesito quando comparado com o modelo anterior. Isto é obtido através da interferência de dois raios UV que geram uma variação de índice de refração senoidal em um pedaço de vidro óptico. A desvantagem desse último modelo é que traz uma eficiência geral bem menor que o primeiro.
+
+Após o processo de reflexão e difração, a luz incide sobre o detector. O CCD é um dos detectores utilizados na construção de um espectrômetro óptico. Os feixes luminosos incidem sobre cada um dos pixels do componente e são transformados em valores de intensidade. Existem materiais com bandas diferentes que podem ser utilizados na construção do detector, assim como visto na figura \ref{fig:materiais_detector}. O tipo ideal para aplicação depende do espectro do sinal que se pretende analisar, assim como também o orçamento do projeto, dado que existem materiais que são mais fáceis de construir, e, portanto, implicam em produtos mais baratos.
+
+\begin{figure}[H]
+	\includegraphics[width=0.5\textwidth]{images/banda_ccd.jpg}
+	\caption{Detentividade por comprimento de onda para diferentes materiais}
+	\label{fig:materiais_detector}
+\end{figure} 
+
+Alguns cuidados devem ser tomado a fim de se obter a medida mais precisa possível. A temperatura deve ser controlada para diminuir o ruído na medida. Isto é feito geralmente através de um cooler termoelétrico construído junto ao equipamento. Outro cuidado é o de garantir que a maior parte da luz incide sobre o detector, pois o se o mesmo tiver pixels com largura menor do que o core da fibra que transmite os sinais, uma parte da luz incidente será perdida. Para isso colocam-se lentes cilíndricas na frente do detector, com a finalidade de focar a luz sem distorcer a imagem formada.
+
+Finalmente, o resultado obtido pode ser parecido com o da figura \ref{fig:resultado_espectrometro}
+
+\begin{figure}[H]
+	\includegraphics[width=0.5\textwidth]{images/resultado_espectrometro.jpg}
+	\caption{Espectro das lâmpadas de tungstênio}
+	\label{fig:resultado_espectrometro}
+\end{figure} 
 
 \section{Conclusão}
 Devido aos avanços tecnológicos na fabricação das fibras ópticas e os componentes que são envolvidos em um sistema de comunicação. A difusão da fibra óptica aumentou consideravelmente. Atualmente, as fibras ópticas garantem a menor atenuação do sinal e podem ser utilizadas para diversas aplicações.
