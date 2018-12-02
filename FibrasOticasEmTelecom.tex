@@ -78,8 +78,33 @@ Para o caso da fibra óptica, o emissor é uma fonte luminosa, que envia à fibr
 \section{Construção da fibra}
 Comentar sobre os materiais que são construídos, as janelas de transmissão, os tipos de dispersão, custo-benefício de cada uma delas.
 
+\subsection{Janelas de transmissão}
+
+\subsubsection{História}
+Como é possível ver na figura \ref{fig:hist-window}, entre os anos de 1970 e 1990 houve um grande desenvolvimento no material que compõe as fibras ópticas. Com este desenvolvimento, sujiram novas janelas de transmissão e isso proporcionou uma menor perda do sinal para longas distãncias.
+\begin{figure}[h]
+\label{fig:hist-window}
+\includegraphics[width=\columnwidth]{hist-windows.png}
+\caption{Desenvolvimento das janelas de transmissão em fibras ópticas}
+\end{figure}
+
+
+\subsubsection{Primeira Janela}
+Os primeiros sistemas de comunicação com fibra óptica em 1970 utilizavam lasers com comprimento de onda no entorno de 800 nm.
+A faixa de transmissão entre 800-900 nm, possui uma perda de sinal de 4dB/km. E como os primeiros sistemas utilizavam esta janela, a mesma ficou conhecida como Primeira Janela.
+\subsubsection{Segunda Janela}
+Com o avanço da tecnologia de purificação do vidro, a segunda  e terceira janelas apareceram. A segunda janela de transmissão é conhecida como banda O, e nela há uma perda de 0.5dB/km e é centrada em 1300 nm. Esta janela possui um suporte a altas taxas de transmissão de dados.
+\subsubsection{Terceira Janela}
+Atualmente, a maioria dos sistemas de comunicação são feitos utilizando a terceira janela, centrada em 1550 nm e chamada de banda C. Ela possui uma perda de 0.2dB/km, o que é ideal para sistemas de longa distância, pois permite a instalação de amplificadores ópticos mais espaçados.
 \section{Componentes óticos}
 Comentar sobre alguns componentes óticos utilizados como fbg para filtragem dos sinais e amplificadores ópticos
+
+
+\begin{figure}[h]
+\includegraphics[width=\columnwidth]{windows.png}
+\caption{Janelas de transmissão e comprimentos de onda na transmissão}
+\end{figure}
+
 
 \subsection{Transmissores ópticos}
 Os principais tipos de transmissores são:
@@ -91,6 +116,7 @@ Porém este tipo de transmissor possui uma saída mais direcionada que o LED, au
 
 \subsection{Receptores ópticos}
 O receptor óptico é o elemento responsável por detectar a potência óptica incidente e extrair o sinal dela. É um componente crítico pois geralmente determina a eficiência do sistema, e deve manter boas taxas de razão sinal ruido.\cite{RECEIVER}
+
 \subsection{Amplificadores ópticos}
 \par Esta tecnologia permitiu um enorme avanço na utilização de fibras ópticas para comunicação em longas distâncias. Antes dos amplificadores ópticos, eram utilizados repetidores eletrônicos. Estes recuperavam o sinal óptico e transformavam a mensagem em sinal elétrico. Este sinal era então amplificado, filtrado, convertido para sinal óptico e finalmente transmitido para a fibra, agora já amplificado. Apesar de possuírem uma boa eficiência, estes repetidores aumentavam o custo do sistema como um todo. Porque possuem uma eletrônica muito complexa, principalmente para transmissões moduladas em altas taxas.
 \par Com o avanço da tecnologia de fabricação das fibras, foi possível a criação de amplificadores ópticos, com eles o processo de amplificação é totalmente realizado no domínio óptico. Tornando desnecessário a utilização de amplificadores regenerativos.
@@ -185,6 +211,19 @@ Existem OTDRs com diferentes finalidades. Antes de fazer a compra do mesmo, nece
 
 \section{Conclusão}
 
+\clearpage
+\appendix
+\section{Apêndice A}
+\subsection{Luz coerente}
+\label{ap:l-coerente}
+A luz coerente é formada por ondas de mesma frequência e direção, que mantêm uma relação de fase constante.Mais especificamente, dois pontos de uma onda são ditos coerentes quando guardam uma relação de fase constante, ou seja, quando conhecido o valor instantâneo do campo elétrico em um dos pontos, é possível prever o do outro. Existem duas manifestações claramente diferenciadas de coerência: a coerência temporal e a espacial.
+
+\subsubsection{Coerencia temporal}
+A coerência temporal está relacionada com a correlação da fase da onda em um determinado ponto alcançado pela mesma em dois instantes de tempo diferentes. Se consideramos o campo elétrico em um ponto P em dois instantes distintos t e t+T se define o tempo de coerência como o máximo valor de T para que a diferença de fase entre o campo em ambos pontos permanece predizível.
+\par O elevado índice de coerência temporal dos geradores laser é explorado em diversas aplicações como medidas de distâncias, velocidades, vibrações, etc.
+\subsubsection{Coerencia espacial}
+A coerência espacial faz referência a uma relação de fase definida entre pontos distintos de uma seção transversal de um feixe luminoso.
+A forma de detetar a coerência espacial em um feixe luminoso é mediante o experimento de Young. 
 \bibliographystyle{ieeetr}
 \bibliography{citations}
 
