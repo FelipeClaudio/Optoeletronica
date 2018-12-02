@@ -76,7 +76,21 @@ As fibras ópticas tem diversas finalidades, sendo uma das mais importantes a ut
 
 Para o caso da fibra óptica, o emissor é uma fonte luminosa, que envia à fibra ópica (o canal) luz. A luz é interpretada no receptor, que pode ser um sensor fotovoltaico. A mensagem agora em pulsos elétricos é enviada ao destinatário e pode ser utilizada como qualquer outra mensagem vinda de um diferente meio de comunicação.
 \section{Construção da fibra}
-Comentar sobre os materiais que são construídos, as janelas de transmissão, os tipos de dispersão, custo-benefício de cada uma delas.
+
+
+\subsection{Tipos de fibras}
+
+\subsubsection{Fibra monomodo}
+Neste tipo de fibra, como o nome sugere, apenas um modo - comprimento de onda - passa pela fibra. Geralmente, o comprimento de onda é referente a segunda ou terceira janela (1310 nm ou 1550 nm). As fibras monomodo possuem uma banda maior e menor perda em relação às multimodo. A restrição de apenas um modo é realizada pois a fibra possui um pequeno core na mesma ordem de grandeza que o comprimento de onda da luz incidente. A desvantagem deste tipo de fibra é que apenas emissores com laser podem fazer acoplamento nesta fibra.
+
+\subsubsection{Fibra multimodo}
+Ao contrário da fibra monomodo, a fibra multimodo permite a passagem de diversos modos. Os comprimentos de onda que são utilizados nessa fibra estão na faixa de 850-1300nm. Neste tipo de fibra, o core possui um diâmetro maior, o que permite a passagem de mais modos. Esta fibra é mais barata, ao projetar o sistema é necessário levar em conta o problema de dispersão modal. Como alguns modos são transmitidos com várias reflexões e outros com poucas, estes modos vão se distanciando. Este efeito distorce o sinal e pode causar problemas na interpretação da mensagem.
+
+\begin{figure}[h]
+\includegraphics[width=\columnwidth]{mono-multi.jpg}
+\caption{Representação das fibras multi e monomodo}
+\end{figure}
+
 
 \subsection{Janelas de transmissão}
 
@@ -97,8 +111,7 @@ Com o avanço da tecnologia de purificação do vidro, a segunda  e terceira jan
 \subsubsection{Terceira Janela}
 Atualmente, a maioria dos sistemas de comunicação são feitos utilizando a terceira janela, centrada em 1550 nm e chamada de banda C. Ela possui uma perda de 0.2dB/km, o que é ideal para sistemas de longa distância, pois permite a instalação de amplificadores ópticos mais espaçados.
 \section{Componentes óticos}
-Comentar sobre alguns componentes óticos utilizados como fbg para filtragem dos sinais e amplificadores ópticos
-
+Atualmente exitem diversos componentes ópticos que são utilizados durante o projeto de um sistema de comunicação. Os componentes fundamentais para tal sistemas serão citados a seguir.
 
 \begin{figure}[h]
 \includegraphics[width=\columnwidth]{windows.png}
@@ -129,7 +142,18 @@ Os amplificadores ópticos semicondutores (SOA) amplificam a luz incidente atrav
 \end{figure}
 
 A amplificação é obtida bombeando externamente os níveis de energia do material. Para obter apenas a função de amplificação, é necessário proteger o dispositivo contra oscilações próprias, gerando o efeito laser.
-Os fótons que passam pela região ativa são estimulados e possuem o mesmo comprimento de onda que o sinal óptico, amplificando assim o sinal óptico durante a passagem pelo dispositivo
+Os fótons que passam pela região ativa são estimulados e possuem o mesmo comprimento de onda que o sinal óptico, amplificando assim o sinal óptico durante a passagem pelo dispositivo.
+
+
+\subsection{Rede de Bragg}
+A rede de Bragg, ou em inglês \textit{Fiber Bragg Grating - FBG} possui um elevado número de aplicações. Para os sistemas de comunicação, são utilizadas para filtrar determinados comprimento de onda.
+
+\begin{figure}[h]
+\includegraphics[width=\columnwidth]{fbg-principle.png}
+\caption{Funcionamento da Rede de Bragg}
+\end{figure}
+
+
 \section{Modulações utilizadas}
 \subsection{Amplitude Shift Keying (ASK)}
 \par A modulação ASK (Amplitude Shift Keying) é um tipo de modulação por intensidade do sinal da portadora, também conhecida por ON-OFF-keying. O sinal é modulado em uma portadora óptica de alta frequência. Na técnica ASK, um sinal de frequência da portadora é adicionado ao sinal da mensagem. Logo uma mensagem com o bit 1, é transmitido um sinal com A W. Enquanto que no bit 0 com 0 W. A modulação ASK é simples de gerar e detectar. No ponto de detecção, a demodulação pode ser realizada facilmente utilizando um detector fotovoltaico, que converte a energia óptica em elétrica, resultando o sinal transmitido.
