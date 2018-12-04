@@ -51,7 +51,7 @@ Telecomunicações, fibras ópticas, optoeletrônica
 \maketitle
 
 \IEEEdisplaynontitleabstractindextext
-As fibras ópticas tem diversas finalidades, sendo uma das mais importantes a utilização em telecomunicações. O avanço das tecnologias de fabricação, modulação e também instrumentação tem tornado cada vez mais viável a utilização das mesmas para transmissões de dados a grandes distâncias com altas taxas de bits. Busca-se através deste paper mostrar o processo de escolha de dimensionamento de uma rede baseada em componentes óticos.
+As fibras ópticas tem diversas finalidades, sendo uma das mais importantes a utilização em telecomunicações. O avanço das tecnologias de fabricação, modulação e também instrumentação tem tornado cada vez mais viável a utilização das mesmas para transmissões de dados a grandes distâncias com altas taxas de bits. Busca-se através deste paper mostrar o processo de escolha e dimensionamento de uma rede baseada em componentes óticos.
 \IEEEpeerreviewmaketitle
 
 
@@ -74,7 +74,7 @@ As fibras ópticas tem diversas finalidades, sendo uma das mais importantes a ut
 \caption{Diagrama de blocos de um sistema de comunicação}
 \end{figure}
 
-Para o caso da fibra óptica, o emissor é uma fonte luminosa, que envia à fibra ópica (o canal) luz. A luz é interpretada no receptor, que pode ser um sensor fotovoltaico. A mensagem agora em pulsos elétricos é enviada ao destinatário e pode ser utilizada como qualquer outra mensagem vinda de um diferente meio de comunicação.
+Para o caso da fibra óptica, o emissor é uma fonte luminosa, que envia à fibra óptica (o canal) luz. A luz é interpretada no receptor, que pode ser um sensor fotovoltaico. A mensagem agora em pulsos elétricos é enviada ao destinatário e pode ser utilizada como qualquer outra mensagem vinda de um diferente meio de comunicação.
 \section{Construção da fibra}
 
 
@@ -84,7 +84,7 @@ Para o caso da fibra óptica, o emissor é uma fonte luminosa, que envia à fibr
 Neste tipo de fibra, como o nome sugere, apenas um modo - comprimento de onda - passa pela fibra. Geralmente, o comprimento de onda é referente a segunda ou terceira janela (1310 nm ou 1550 nm). As fibras monomodo possuem uma banda maior e menor perda em relação às multimodo. A restrição de apenas um modo é realizada pois a fibra possui um pequeno core na mesma ordem de grandeza que o comprimento de onda da luz incidente. A desvantagem deste tipo de fibra é que apenas emissores com laser podem fazer acoplamento nesta fibra.
 
 \subsubsection{Fibra multimodo}
-Ao contrário da fibra monomodo, a fibra multimodo permite a passagem de diversos modos. Os comprimentos de onda que são utilizados nessa fibra estão na faixa de 850-1300nm. Neste tipo de fibra, o core possui um diâmetro maior, o que permite a passagem de mais modos. Esta fibra é mais barata em relação à monomodo. E ao projetar o sistema é necessário levar em conta o problema de dispersão modal. Como alguns modos são transmitidos com várias reflexões e outros com poucas, estes modos vão se distanciando. Este efeito distorce o sinal e pode causar problemas na interpretação da mensagem.
+Ao contrário da fibra monomodo, a fibra multimodo permitem a passagem de diversos modos. Os comprimentos de onda que são utilizados nessa fibra estão na faixa de 850-1300nm. Neste tipo de fibra, o core possui um diâmetro maior, o que permite a passagem de mais modos. Esta fibra é mais barata em relação à monomodo. E ao projetar o sistema é necessário levar em conta o problema de dispersão modal. Como alguns modos são transmitidos com várias reflexões e outros com poucas, estes modos vão se distanciando. Este efeito distorce o sinal e pode causar problemas na interpretação da mensagem.
 
 \begin{figure}[h]
 \includegraphics[width=\columnwidth]{mono-multi.jpg}
@@ -95,7 +95,7 @@ Ao contrário da fibra monomodo, a fibra multimodo permite a passagem de diverso
 \subsection{Janelas de transmissão}
 
 \subsubsection{História}
-Como é possível ver na figura \ref{fig:hist-window}, entre os anos de 1970 e 1990 houve um grande desenvolvimento no material que compõe as fibras ópticas. Com este desenvolvimento, surgiram novas janelas de transmissão e isso proporcionou uma menor perda do sinal para longas distâncias.
+Como é possível ver na figura \ref{fig:hist-window}, entre os anos de 1970 e 1990 houve um grande desenvolvimento no material que compõe as fibras ópticas. Com este avanço surgiram novas janelas de transmissão e isso proporcionou uma menor perda do sinal para longas distâncias.
 \begin{figure}[h]
 \label{fig:hist-window}
 \includegraphics[width=\columnwidth]{hist-windows.png}
@@ -105,7 +105,7 @@ Como é possível ver na figura \ref{fig:hist-window}, entre os anos de 1970 e 1
 
 \subsubsection{Primeira Janela}
 Os primeiros sistemas de comunicação com fibra óptica em 1970 utilizavam lasers com comprimento de onda no entorno de 800 nm.
-A faixa de transmissão entre 800-900 nm, possui uma perda de sinal de 4dB/km. E como os primeiros sistemas utilizavam esta janela, a mesma ficou conhecida como Primeira Janela.
+A faixa de transmissão entre 800-900 nm, possui uma perda de sinal de 4dB/km. E como os primeiros sistemas utilizavam esta janela, a mesma ficou conhecida como primeira Janela.
 \subsubsection{Segunda Janela}
 Com o avanço da tecnologia de purificação do vidro, a segunda  e terceira janelas apareceram. A segunda janela de transmissão é conhecida como banda O, e nela há uma perda de 0.5dB/km e é centrada em 1300 nm. Esta janela possui um suporte a altas taxas de transmissão de dados.
 \subsubsection{Terceira Janela}
@@ -171,7 +171,7 @@ Utilizando uma FBG em conjunto com um circulador, é possível retirar comprimen
 \end{figure}
 
 \subsection{Frequency Shift Keying (FSK)}
-\par A modulação FSK é quando a freqüência do laser é trocada entre as duas freqüências. Nesta técnica de modulação. Comparando com a modulação ASK, a complexidade de gerar e receber do sistema aumenta. Um formato de modulação diferente baseado no FSK pode ser definido mudando valor do índice de modulação. Uma pequena mudança no índice de modulação resulta em um espectro óptico mais compacto. Em sistemas já implantados, um formato de modulação não pode ser substituído pelo formato de modulação baseado em FSK devido à complexidade do sistema receptor. Nesta técnica, os parâmetros do transmissor e os  parâmetros do receptor devem ser idênticos.\cite{MODULATION}
+\par A modulação FSK é quando a frequência do laser é trocada entre as duas frequências. Nesta técnica de modulação. Comparando com a modulação ASK, a complexidade de gerar e receber do sistema aumenta. Um formato de modulação diferente baseado no FSK pode ser definido mudando valor do índice de modulação. Uma pequena mudança no índice de modulação resulta em um espectro óptico mais compacto. Em sistemas já implantados, um formato de modulação não pode ser substituído pelo formato de modulação baseado em FSK devido à complexidade do sistema receptor. Nesta técnica, os parâmetros do transmissor e os  parâmetros do receptor devem ser idênticos.\cite{MODULATION}
 
 \begin{figure}[hb]
 \includegraphics[width=\columnwidth]{fsk.png}
@@ -204,10 +204,9 @@ Ao instalar uma fibra de grande comprimento, a mesma pode sofrer avarias durante
 
 
 \subsection{OTDR}
-O \textbf{\textit{OTDR}}  utiliza o efeito de retroespalhamento (\textbf{\textit{backscattering}}) dos raios de luz durante a passagem dos sinais luminosos pela fibra óptica. Assim sendo, torna-se possível medir a atenuação do sinal conforme a distância, assim como visto \cite{FOA}
+O \textbf{\textit{OTDR}} utiliza o efeito de retroespalhamento (\textbf{\textit{backscattering}}) dos raios de luz durante a passagem dos sinais luminosos pela fibra óptica. Assim sendo, torna-se possível medir a atenuação do sinal conforme a distância, assim como visto \cite{FOA}
 
-Esse instrumento possui um laser que emite luz em uma frequência pré-determinada e através da diferença de tempo e da potência do sinal medido após o retroespalhamento é possível determinar a relação entre o sinal recebido e a reflexão em uma dada distância de fibra, assim como visto na figura \ref{fig:otdr_esquematico}. Com isso se torna possível fazer uma inspeção na fibra sem a necessidade de retirar-la do local onde está instalada.
-
+Esse instrumento possui um laser que emite luz em uma frequência pré-determinada e através da diferença de tempo e da potência do sinal medido após o retroespalhamento é possível determinar a relação entre o sinal recebido e a reflexão em uma dada distância de fibra, assim como visto na figura \ref{fig:otdr_esquematico}. Com isso torna-se possível fazer uma inspeção na fibra sem a necessidade de retirar-la do local onde está instalada.
 
 \begin{figure}[H]
 	\includegraphics[width=0.5\textwidth]{images/OTDR_esquematico.JPG}
@@ -222,7 +221,7 @@ O equipamento deve ser conectado conforme a figura [\ref{fig:otdr_teste}], sendo
 	\label{fig:otdr_teste}
 \end{figure}
 
-Uma maneira de aumentar a distância que o sinal chega sem ser muito atrapalhado por ruído é diminuindo o comprimento de onda do laser utilizado na inspeção da fibra. Todavia, isto faz com que a resolução do caminho percorrido diminua, sendo assim, obtêm-se menos informação sobre o caminho percorrido pelo sinal. Cabe ao operador do OTDR ajustar o equipamento de forma a obter o melhor compromisso entre distância e resolução, assim como visto em \cite{OTDR_LAB}.
+Uma maneira de aumentar a distância que o sinal chega sem ser muito atrapalhado por ruído é aumentando o comprimento de onda do laser utilizado na inspeção da fibra. Todavia, isto faz com que a resolução do caminho percorrido diminua, sendo assim, obtêm-se menos informação sobre o caminho percorrido pelo sinal. Cabe ao operador do OTDR ajustar o equipamento de forma a obter o melhor compromisso entre distância e resolução, assim como visto em \cite{OTDR_LAB}.
 
 A inclinação da curva na parte linear indica o coeficiente de atenuação da fibra (db/km). Quanto menor a inclinação, mais longe consegue-se transmitir um sinal até que ele chegue à uma razão sinal ruído (\textbf{SNR}) mínima pré-determinada.
 
@@ -238,7 +237,7 @@ Busca-se observar os pontos onde existem descontinuidades na reta de potência d
 Existem OTDRs com diferentes finalidades. Antes de fazer a compra do mesmo, necessita-se avaliar o resultado que deseja-se obter com o equipamento. Algumas das perguntas que podem ser feitas são: Há necessidade de ser portátil? Precisa ter bateria? Se precisar, esta deseja-se que esta dure por longo período? A tela precisa ser grande? Qual distância máxima da fibra que desejá-se trabalhar? Qual resolução que se espera nos resultados obtidos? Conforme a pesquisa de preço feito no site mercado livre no dia 30/11/2018 \cite{M_LIVRE}, um OTDR novo pode variar entre R\$3.981, e R\$35.000.
 
 \section{Espectrômetro óptico}
-No processo de instalação e configuração de um sistema de telecomunicações baseado em fibras ópticas pode ser necessário analisar a composição espectral do sinal, dado que o espalhamento das frequências presente no sinal pode significar sobreposição, causando assim erros ao interpretar a informação. Busca-se, na maioria das vezes, utilizar o máximo da fibra em questão de taxa de transmissão, portanto o a frequência que busca=se trabalhar é perto do limiar onde ocorre esta sobreposição.
+No processo de instalação e configuração de um sistema de telecomunicações baseado em fibras ópticas pode ser necessário analisar a composição espectral da fonte luminosa, dado que o espalhamento das frequências presente no sinal pode significar sobreposição, causando assim erros ao interpretar a informação. Busca-se, na maioria das vezes, utilizar o máximo da fibra em questão de taxa de transmissão, portanto o a frequência que busca-se trabalhar é perto do limiar onde ocorre esta sobreposição.
  
 O espectrômetro óptico é um instrumento que tem como finalidade decompor a luz em um espectro de frequência e mostrar este resultado de forma com que se possa realizar análises. Um exemplo de construção é visto na figura \ref{fig:espectrometro_esquematico}
 
@@ -248,7 +247,7 @@ O espectrômetro óptico é um instrumento que tem como finalidade decompor a lu
 	\label{fig:espectrometro_esquematico}
 \end{figure} 
 
-O caminho que a luz percorre começa pela fenda. Esta pode ser ter diferentes diâmetros. O diâmetro ideal depende do sistema utilizado. Busca-se um balanço entre a quantidade de luz que passa pela fenda e a resolução obtida, assim como visto em \cite{SPECTROMETES}. Após a luz entrar no equipamento, ela percorre um caminho similar ao mostrado na figura \ref{fig:caminho_luz}, passando por um espelho, depois um rede de difração, um outro espelho e chega finalmente a um detector responsável por transformar o sinal luminoso em um valor de intensidade.
+O caminho que a luz percorre começa pela fenda. Esta pode ser ter diferentes diâmetros. O diâmetro ideal depende do sistema utilizado. Busca-se um balanço entre a quantidade de luz que passa pela fenda e a resolução obtida, assim como visto em \cite{SPECTROMETES}. Após a luz entrar no equipamento,um caminho similar ao mostrado na figura \ref{fig:caminho_luz} é percorrido, passando por um espelho, depois um rede de difração, um outro espelho e chega finalmente a um detector responsável por transformar o sinal luminoso em um valor de intensidade.
 
 \begin{figure}[H]
 	\includegraphics[width=0.5\textwidth, height=0.35\textwidth]{images/caminho_luz.jpg}
@@ -256,7 +255,7 @@ O caminho que a luz percorre começa pela fenda. Esta pode ser ter diferentes di
 	\label{fig:caminho_luz}
 \end{figure}  
 
-A rede de difração é um dos fatores determinantes na resolução do espectrômetro. Existem basicamente 2 tipos de redes de difração, sendo que uma delas é mais simples e barata, tendo ranhuras paralelas em sua construção e traz no resultado muita luz difusa. Em algumas aplicações necessita-se que a distribuição espectral seja a mais uniforme possível. Neste caso, a rede de difração holográfica é vantajosa, pois tem uma resposta melhor neste quesito quando comparado com o modelo anterior. Isto é obtido através da interferência de dois raios UV que geram uma variação de índice de refração senoidal em um pedaço de vidro óptico. A desvantagem desse último modelo é que traz uma eficiência geral bem menor que o primeiro.
+A rede de difração é um dos fatores determinantes na resolução do espectrômetro. Existem basicamente 2 tipos de redes de difração, sendo que uma delas é mais simples e barata, tendo ranhuras paralelas em sua construção e traz no resultado muita luz difusa. Em algumas aplicações necessita-se que a distribuição espectral seja a mais uniforme possível. Neste caso, a rede de difração holográfica é vantajosa, pois tem uma resposta melhor neste quesito quando comparado com o modelo anterior. A desvantagem desse último modelo é que traz uma eficiência geral bem menor que o primeiro.
 
 Após o processo de reflexão e difração, a luz incide sobre o detector. O CCD é um dos detectores utilizados na construção de um espectrômetro óptico. Os feixes luminosos incidem sobre cada um dos pixels do componente e são transformados em valores de intensidade. Existem materiais com bandas diferentes que podem ser utilizados na construção do detector, assim como visto na figura \ref{fig:materiais_detector}. O tipo ideal para aplicação depende do espectro do sinal que se pretende analisar, assim como também o orçamento do projeto, dado que existem materiais que são mais fáceis de construir, e, portanto, implicam em produtos mais baratos.
 
@@ -283,7 +282,7 @@ Devido aos avanços tecnológicos na fabricação das fibras ópticas e os compo
 \section{Apêndice A}
 \subsection{Luz coerente}
 \label{ap:l-coerente}
-A luz coerente é formada por ondas de mesma frequência e direção, que mantêm uma relação de fase constante.Mais especificamente, dois pontos de uma onda são ditos coerentes quando guardam uma relação de fase constante, ou seja, quando conhecido o valor instantâneo do campo elétrico em um dos pontos, é possível prever o do outro. Existem duas manifestações claramente diferenciadas de coerência: a coerência temporal e a espacial.
+A luz coerente é formada por ondas de mesma frequência e direção, que mantêm uma relação de fase constante. Mais especificamente, dois pontos de uma onda são ditos coerentes quando guardam uma relação de fase constante, ou seja, quando conhecido o valor instantâneo do campo elétrico em um dos pontos, é possível prever o do outro. Existem duas manifestações claramente diferenciadas de coerência: a coerência temporal e a espacial.
 
 \subsubsection{Coerencia temporal}
 A coerência temporal está relacionada com a correlação da fase da onda em um determinado ponto alcançado pela mesma em dois instantes de tempo diferentes. Se consideramos o campo elétrico em um ponto P em dois instantes distintos t e t+T se define o tempo de coerência como o máximo valor de T para que a diferença de fase entre o campo em ambos pontos permanece predizível.
