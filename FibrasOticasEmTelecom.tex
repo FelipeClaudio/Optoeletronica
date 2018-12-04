@@ -84,7 +84,7 @@ Para o caso da fibra óptica, o emissor é uma fonte luminosa, que envia à fibr
 Neste tipo de fibra, como o nome sugere, apenas um modo - comprimento de onda - passa pela fibra. Geralmente, o comprimento de onda é referente a segunda ou terceira janela (1310 nm ou 1550 nm). As fibras monomodo possuem uma banda maior e menor perda em relação às multimodo. A restrição de apenas um modo é realizada pois a fibra possui um pequeno core na mesma ordem de grandeza que o comprimento de onda da luz incidente. A desvantagem deste tipo de fibra é que apenas emissores com laser podem fazer acoplamento nesta fibra.
 
 \subsubsection{Fibra multimodo}
-Ao contrário da fibra monomodo, a fibra multimodo permite a passagem de diversos modos. Os comprimentos de onda que são utilizados nessa fibra estão na faixa de 850-1300nm. Neste tipo de fibra, o core possui um diâmetro maior, o que permite a passagem de mais modos. Esta fibra é mais barata, ao projetar o sistema é necessário levar em conta o problema de dispersão modal. Como alguns modos são transmitidos com várias reflexões e outros com poucas, estes modos vão se distanciando. Este efeito distorce o sinal e pode causar problemas na interpretação da mensagem.
+Ao contrário da fibra monomodo, a fibra multimodo permite a passagem de diversos modos. Os comprimentos de onda que são utilizados nessa fibra estão na faixa de 850-1300nm. Neste tipo de fibra, o core possui um diâmetro maior, o que permite a passagem de mais modos. Esta fibra é mais barata em relação à monomodo. E ao projetar o sistema é necessário levar em conta o problema de dispersão modal. Como alguns modos são transmitidos com várias reflexões e outros com poucas, estes modos vão se distanciando. Este efeito distorce o sinal e pode causar problemas na interpretação da mensagem.
 
 \begin{figure}[h]
 \includegraphics[width=\columnwidth]{mono-multi.jpg}
@@ -95,7 +95,7 @@ Ao contrário da fibra monomodo, a fibra multimodo permite a passagem de diverso
 \subsection{Janelas de transmissão}
 
 \subsubsection{História}
-Como é possível ver na figura \ref{fig:hist-window}, entre os anos de 1970 e 1990 houve um grande desenvolvimento no material que compõe as fibras ópticas. Com este desenvolvimento, sujiram novas janelas de transmissão e isso proporcionou uma menor perda do sinal para longas distãncias.
+Como é possível ver na figura \ref{fig:hist-window}, entre os anos de 1970 e 1990 houve um grande desenvolvimento no material que compõe as fibras ópticas. Com este desenvolvimento, surgiram novas janelas de transmissão e isso proporcionou uma menor perda do sinal para longas distâncias.
 \begin{figure}[h]
 \label{fig:hist-window}
 \includegraphics[width=\columnwidth]{hist-windows.png}
@@ -110,7 +110,7 @@ A faixa de transmissão entre 800-900 nm, possui uma perda de sinal de 4dB/km. E
 Com o avanço da tecnologia de purificação do vidro, a segunda  e terceira janelas apareceram. A segunda janela de transmissão é conhecida como banda O, e nela há uma perda de 0.5dB/km e é centrada em 1300 nm. Esta janela possui um suporte a altas taxas de transmissão de dados.
 \subsubsection{Terceira Janela}
 Atualmente, a maioria dos sistemas de comunicação são feitos utilizando a terceira janela, centrada em 1550 nm e chamada de banda C. Ela possui uma perda de 0.2dB/km, o que é ideal para sistemas de longa distância, pois permite a instalação de amplificadores ópticos mais espaçados.
-\section{Componentes óticos}
+\section{Componentes ópticos}
 Atualmente exitem diversos componentes ópticos que são utilizados durante o projeto de um sistema de comunicação. Os componentes fundamentais para tal sistemas serão citados a seguir.
 
 \begin{figure}[h]
@@ -122,7 +122,7 @@ Atualmente exitem diversos componentes ópticos que são utilizados durante o pr
 \subsection{Transmissores ópticos}
 Os principais tipos de transmissores são:
 \subsubsection{LED}
-Possuem como principal vantagem se preço, disponibilidade e confiabilidade. A luz é gerada por emissão espontânea, portanto apenas emitem luz incoerente e com amplo espectro. Este tipo de emissor também não é direcional, portanto apenas pode ser acoplado à fibra multimodo e com baixa eficiência.\cite{TRANSMITTERS}
+Possuem como principal vantagem seu preço, disponibilidade e confiabilidade. A luz é gerada por emissão espontânea, portanto apenas emitem luz incoerente e com amplo espectro. Este tipo de emissor também não é direcional, portanto apenas pode ser acoplado à fibra multimodo e com baixa eficiência.\cite{TRANSMITTERS}
 \subsubsection{Diodos de Laser}
 Este tipo de diodo possui uma faixa de preço muito mais elevada que o LED. Também são muito sensíveis à temperatura e precisam estar em um ambiente estável para funcionar de maneira ótima. 
 Porém este tipo de transmissor possui uma saída mais direcionada que o LED, aumentando assim sua eficiência no acoplamento de fibras ópticas. Este fato também proporciona o uso de fibras ópticas monomodo, aumentando assim a distância alcançada pelo sistema de comunicação. Os diodos lasers, ao contrario do LED, emitem luz coerente portanto a luz é emitida com apenas uma frequência, diminuindo assim a dispersão modal. \cite{TRANSMITTERS}
@@ -171,7 +171,7 @@ Utilizando uma FBG em conjunto com um circulador, é possível retirar comprimen
 \end{figure}
 
 \subsection{Frequency Shift Keying (FSK)}
-\par A modulação FSK é quando a freqüência do laser é trocada entre as duas freqüências. Nesta técnica de modulação. Comparando com a modulação ASK,a complexidade de gerar e receber do sistema aumenta. O formato de modulação diferente baseado no FSK pode ser definido mudando valor do índice de modulação. Uma pequena mudança no índice de modulação resulta em um espectro óptico mais compacto. Em sistemas já implantados, um formato de modulação não pode ser substituído pelo formato de modulação baseado em FSK devido à complexidade do sistema receptor. Nesta técnica, os parâmetros do transmissor e os  parâmetros do receptor devem ser idênticos.\cite{MODULATION}
+\par A modulação FSK é quando a freqüência do laser é trocada entre as duas freqüências. Nesta técnica de modulação. Comparando com a modulação ASK, a complexidade de gerar e receber do sistema aumenta. Um formato de modulação diferente baseado no FSK pode ser definido mudando valor do índice de modulação. Uma pequena mudança no índice de modulação resulta em um espectro óptico mais compacto. Em sistemas já implantados, um formato de modulação não pode ser substituído pelo formato de modulação baseado em FSK devido à complexidade do sistema receptor. Nesta técnica, os parâmetros do transmissor e os  parâmetros do receptor devem ser idênticos.\cite{MODULATION}
 
 \begin{figure}[hb]
 \includegraphics[width=\columnwidth]{fsk.png}
